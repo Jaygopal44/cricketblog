@@ -1,0 +1,43 @@
+<%-include('../../header.ejs')%>
+                    <%-include('../sidebar.ejs')%>
+        <div class="col-md-9">
+            <div class="dash-right">
+                <div class="dash-header">
+                    <div class="dash-title">
+                        <h1>Users</h1>
+                        <hr>
+                    </div>
+                   
+                </div>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>#ID</th>
+
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Message</th>
+                        
+                    </tr>
+                    <% var i=1 %>
+                       
+
+                            <tr>
+                                <td><%= i++ %></td>
+                                    <td><%= data.name %></td>
+                                    <td><%= data.email %></td>
+                                    <td><%= data.phone %></td>
+                                    <td><%= data.message %></td>
+                                      
+                                        </tr>
+                                       
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<%-include('../../footer.ejs')%>

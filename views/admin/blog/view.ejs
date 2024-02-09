@@ -1,0 +1,40 @@
+<%-include('../../header.ejs')%>
+
+                    <%-include('../sidebar.ejs')%>
+                    <div class="col-md-9">
+                        <div class="dash-right">
+                            <div class="dash-header">
+                                <div class="dash-title">
+                                    <h1>Blogs</h1>
+                                </div>
+                                
+                            </div>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <th>#No.</th>
+                                    
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Image</th>
+                                    
+                                </tr>
+                                <% var i=1 %>
+                                
+                                <tr>
+                                    <td><%= i++ %></td>
+                                    <td><%= data.title %></td>
+                                    <td><%= data.description %></td>
+                                    <td><img src="/upload/<%= data.image %> " alt="cricket" /></td>
+
+                                </tr>
+                              
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <%-include('../../footer.ejs')%>

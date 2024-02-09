@@ -1,0 +1,65 @@
+<%-include('../../header.ejs')%>
+                    <%-include('../sidebar.ejs')%>
+                    <div class="col-md-9">
+                        <div class="dash-right">
+                            <div class="dash-header">
+                                <div class="dash-title">
+                                    <h1>Contact update</h1>
+                                </div>
+                            </div>
+                            <div class="blog-form">
+                                <form action="/contact/update/<%=data._id %>" method="post">
+                                    <div class="form-group form-row">
+                                        <label class="col-md-3">Name <span
+                                                class="required">*</span></label>
+                                        <div class="col-md-9">
+                                            <input type="text"
+                                                class="form-control"
+                                                placeholder="name" name="name" value="<%=data.name %>" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-row">
+                                        <label class="col-md-3">Email <span
+                                                class="required">*</span></label>
+                                        <div class="col-md-9">
+                                            <input type="text"
+                                                class="form-control"
+                                                placeholder="email" name="email" value="<%=data.email %>" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-row">
+                                        <label class="col-md-3">Phone <span
+                                                class="required">*</span></label>
+                                        <div class="col-md-9">
+                                            <input type="text"
+                                                class="form-control"
+                                                placeholder="phone" name="phone" value="<%=data.phone %>" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-row">
+                                        <label class="col-md-3">messsage <span
+                                                class="required">*</span></label>
+                                        <div class="col-md-9">
+                                            <input type="text"
+                                                class="form-control"
+                                                placeholder="message" name="message" value="<%=data.message %>" required>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="form-group form-row">
+                                        <label class="col-md-3"></label>
+                                        <div class="col-md-9">
+                                            <button type="submit" class="btn
+                                                btn-primary">Update</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%-include('../../footer.ejs')%>
